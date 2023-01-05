@@ -6,7 +6,7 @@ RUN apt install  openssh-server sudo -y
 
 RUN useradd -rm -d /home/ubuntu -s /bin/bash -g root -G sudo -u 1000 yaswanth 
 
-RUN usermod -aG sudo test
+RUN usermod -aG sudo yaswanth
 
 RUN service ssh start
 
